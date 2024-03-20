@@ -1,0 +1,23 @@
+commonfields:
+  id: 1495ced5-7690-4fa5-8e71-e268638012b7
+  version: 2
+vcShouldKeepItemLegacyProdMachine: false
+name: DisplaySESQuarantineCommands
+script: |-
+  demisto.results({
+      "Type": 17,
+      "ContentsFormat": "markdown",
+      "Contents": "### Recent quarantine commands:  \n" + demisto.executeCommand("ses-search-command-history", {"command_name": "QUARANTINE"})[0]["HumanReadable"]
+  })
+type: python
+tags:
+- widget
+enabled: true
+scripttarget: 0
+subtype: python3
+pswd: ""
+runonce: false
+dockerimage: demisto/python3:3.10.10.50695
+runas: DBotWeakRole
+engineinfo: {}
+mainengineinfo: {}

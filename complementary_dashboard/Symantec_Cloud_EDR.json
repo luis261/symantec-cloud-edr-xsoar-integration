@@ -1,0 +1,201 @@
+{
+	"id": "16f49309-9541-4892-8985-f9efee9034d4",
+	"version": 6,
+	"cacheVersn": 0,
+	"modified": "2024-03-19T14:58:35.453976481Z",
+	"created": "0001-01-01T00:00:00Z",
+	"sizeInBytes": 0,
+	"packID": "",
+	"packName": "",
+	"itemVersion": "",
+	"fromServerVersion": "",
+	"toServerVersion": "",
+	"definitionId": "",
+	"vcShouldIgnore": false,
+	"vcShouldKeepItemLegacyProdMachine": false,
+	"commitMessage": "",
+	"shouldCommit": false,
+	"fromDate": "0001-01-01T00:00:00Z",
+	"toDate": "0001-01-01T00:00:00Z",
+	"period": {
+		"by": "",
+		"byTo": "",
+		"byFrom": "days",
+		"toValue": null,
+		"fromValue": 0,
+		"field": ""
+	},
+	"fromDateLicense": "0001-01-01T00:00:00Z",
+	"name": "Symantec Cloud EDR",
+	"prevName": "Symantec Cloud EDR",
+	"layout": [
+		{
+			"id": "91196ff0-e10a-11ee-a89d-0b52cf13cc65",
+			"forceRange": false,
+			"x": 10,
+			"y": 0,
+			"i": "91196ff0-e10a-11ee-a89d-0b52cf13cc65",
+			"w": 2,
+			"h": 3,
+			"widget": {
+				"id": "ebc3da7c-324e-42be-8a10-f7b23e99a583",
+				"version": 5,
+				"cacheVersn": 0,
+				"modified": "2024-03-06T12:04:51.638499337Z",
+				"created": "0001-01-01T00:00:00Z",
+				"sizeInBytes": 0,
+				"packID": "",
+				"packName": "",
+				"itemVersion": "",
+				"fromServerVersion": "",
+				"toServerVersion": "",
+				"propagationLabels": [
+					"all"
+				],
+				"definitionId": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"commitMessage": "",
+				"shouldCommit": false,
+				"Cache": null,
+				"name": "SESQuarantinedDeviceCount",
+				"prevName": "SESQuarantinedDeviceCount",
+				"dataType": "scripts",
+				"widgetType": "number",
+				"query": "DisplaySESQuarantinedDeviceCount",
+				"isPredefined": false,
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"toDate": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byTo": "",
+						"byFrom": "",
+						"toValue": null,
+						"fromValue": null,
+						"field": ""
+					},
+					"fromDateLicense": "0001-01-01T00:00:00Z"
+				},
+				"params": {
+					"valuesFormat": "abbreviated"
+				},
+				"category": ""
+			},
+			"reflectDimensions": true
+		},
+		{
+			"id": "91a9c910-e10a-11ee-a89d-0b52cf13cc65",
+			"forceRange": false,
+			"x": 0,
+			"y": 3,
+			"i": "91a9c910-e10a-11ee-a89d-0b52cf13cc65",
+			"w": 12,
+			"h": 5,
+			"widget": {
+				"id": "1464fc6c-e52b-4e58-8678-9246ccc0bc02",
+				"version": 5,
+				"cacheVersn": 0,
+				"modified": "2024-03-06T12:04:51.638480137Z",
+				"created": "0001-01-01T00:00:00Z",
+				"sizeInBytes": 0,
+				"packID": "",
+				"packName": "",
+				"itemVersion": "",
+				"fromServerVersion": "",
+				"toServerVersion": "",
+				"propagationLabels": [
+					"all"
+				],
+				"definitionId": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"commitMessage": "",
+				"shouldCommit": false,
+				"Cache": null,
+				"name": "SESQuarantinedDevices",
+				"prevName": "SESQuarantinedDevices",
+				"dataType": "scripts",
+				"widgetType": "text",
+				"query": "DisplaySESQuarantinedDevices",
+				"isPredefined": false,
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"toDate": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byTo": "",
+						"byFrom": "",
+						"toValue": null,
+						"fromValue": null,
+						"field": ""
+					},
+					"fromDateLicense": "0001-01-01T00:00:00Z"
+				},
+				"params": {},
+				"category": ""
+			},
+			"reflectDimensions": true
+		},
+		{
+			"id": "314fcac0-e2a8-11ee-9976-e10c6064ee80",
+			"forceRange": false,
+			"x": 0,
+			"y": 0,
+			"i": "314fcac0-e2a8-11ee-9976-e10c6064ee80",
+			"w": 10,
+			"h": 3,
+			"widget": {
+				"id": "cf312961-7f4b-4462-8607-589c5b767378",
+				"version": 1,
+				"cacheVersn": 0,
+				"modified": "2024-03-15T08:44:05.761125539Z",
+				"created": "2024-03-15T08:44:05.760733644Z",
+				"sizeInBytes": 0,
+				"packID": "",
+				"packName": "",
+				"itemVersion": "",
+				"fromServerVersion": "",
+				"toServerVersion": "",
+				"propagationLabels": [
+					"all"
+				],
+				"definitionId": "",
+				"vcShouldIgnore": false,
+				"vcShouldKeepItemLegacyProdMachine": false,
+				"commitMessage": "",
+				"shouldCommit": false,
+				"Cache": null,
+				"name": "SESQuarantineCommands",
+				"prevName": "SESQuarantineCommands",
+				"dataType": "scripts",
+				"widgetType": "text",
+				"query": "DisplaySESQuarantineCommands",
+				"isPredefined": false,
+				"dateRange": {
+					"fromDate": "0001-01-01T00:00:00Z",
+					"toDate": "0001-01-01T00:00:00Z",
+					"period": {
+						"by": "",
+						"byTo": "",
+						"byFrom": "",
+						"toValue": null,
+						"fromValue": null,
+						"field": ""
+					},
+					"fromDateLicense": "0001-01-01T00:00:00Z"
+				},
+				"params": {},
+				"category": ""
+			},
+			"reflectDimensions": true
+		}
+	],
+	"system": false,
+	"isCommon": true,
+	"owner": "",
+	"locked": false,
+	"hidePivot": false,
+	"hideSearch": false,
+	"modulePage": false
+}

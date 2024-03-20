@@ -1,0 +1,48 @@
+{
+  "Cache": null,
+  "packName": "",
+  "dataType": "scripts",
+  "itemVersion": "",
+  "sizeInBytes": 0,
+  "params": {},
+  "query": "DisplaySESQuarantineCommands",
+  "created": "2024-03-15T08:44:05.760733644Z",
+  "modified": "2024-03-15T08:44:05.761125539Z",
+  "shouldCommit": false,
+  "fromServerVersion": "",
+  "propagationLabels": [
+    "all"
+  ],
+  "name": "SESQuarantineCommands",
+  "definitionId": "",
+  "vcShouldKeepItemLegacyProdMachine": false,
+  "dateRange": {
+    "fromDate": "0001-01-01T00:00:00Z",
+    "toDate": "0001-01-01T00:00:00Z",
+    "period": {
+      "by": "",
+      "byTo": "",
+      "byFrom": "",
+      "toValue": null,
+      "fromValue": null,
+      "field": ""
+    },
+    "fromDateLicense": "0001-01-01T00:00:00Z"
+  },
+  "commitMessage": "",
+  "isPredefined": false,
+  "vcShouldIgnore": false,
+  "packID": "",
+  "version": 1,
+  "toServerVersion": "",
+  "id": "cf312961-7f4b-4462-8607-589c5b767378",
+  "cacheVersn": 0,
+  "category": "",
+  "prevName": "SESQuarantineCommands",
+  "widgetType": "text",
+  "customCalculation": {
+    "operation": "count",
+    "fieldName": "",
+    "expression": ""
+  }
+}

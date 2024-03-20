@@ -1,0 +1,23 @@
+commonfields:
+  id: 46f31b45-4c12-41ac-85e4-a113b25e1123
+  version: 23
+vcShouldKeepItemLegacyProdMachine: false
+name: DisplaySESQuarantinedDevices
+script: |-
+  demisto.results({
+      "Type": 17,
+      "ContentsFormat": "markdown",
+      "Contents": "### Devices currently in SES Quarantine:  \n" + demisto.executeCommand("ses-search-devices", {"device_status_reason": "Quarantined", "allow_empty": "yes"})[0]["HumanReadable"]
+  })
+type: python
+tags:
+- widget
+enabled: true
+scripttarget: 0
+subtype: python3
+pswd: ""
+runonce: false
+dockerimage: demisto/python3:3.10.10.50695
+runas: DBotWeakRole
+engineinfo: {}
+mainengineinfo: {}

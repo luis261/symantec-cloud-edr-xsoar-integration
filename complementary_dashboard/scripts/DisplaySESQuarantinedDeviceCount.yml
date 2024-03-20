@@ -1,0 +1,19 @@
+commonfields:
+  id: 877ed0d8-f203-444f-8f5d-214fcdbed586
+  version: 14
+vcShouldKeepItemLegacyProdMachine: false
+name: DisplaySESQuarantinedDeviceCount
+script: 'demisto.results(len(demisto.executeCommand("ses-search-devices", {"device_status_reason":
+  "Quarantined", "allow_empty": "yes"})[0]["Contents"]["devices"]))'
+type: python
+tags:
+- widget
+enabled: true
+scripttarget: 0
+subtype: python3
+pswd: ""
+runonce: false
+dockerimage: demisto/python3:3.10.10.50695
+runas: DBotWeakRole
+engineinfo: {}
+mainengineinfo: {}

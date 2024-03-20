@@ -1,0 +1,48 @@
+{
+  "Cache": null,
+  "packName": "",
+  "dataType": "scripts",
+  "itemVersion": "",
+  "sizeInBytes": 0,
+  "params": {},
+  "query": "DisplaySESQuarantinedDevices",
+  "created": "0001-01-01T00:00:00Z",
+  "modified": "2024-03-06T12:04:51.638480137Z",
+  "shouldCommit": false,
+  "fromServerVersion": "",
+  "propagationLabels": [
+    "all"
+  ],
+  "name": "SESQuarantinedDevices",
+  "definitionId": "",
+  "vcShouldKeepItemLegacyProdMachine": false,
+  "dateRange": {
+    "fromDate": "0001-01-01T00:00:00Z",
+    "toDate": "0001-01-01T00:00:00Z",
+    "period": {
+      "by": "",
+      "byTo": "",
+      "byFrom": "",
+      "toValue": null,
+      "fromValue": null,
+      "field": ""
+    },
+    "fromDateLicense": "0001-01-01T00:00:00Z"
+  },
+  "commitMessage": "",
+  "isPredefined": false,
+  "vcShouldIgnore": false,
+  "packID": "",
+  "version": 5,
+  "toServerVersion": "",
+  "id": "1464fc6c-e52b-4e58-8678-9246ccc0bc02",
+  "cacheVersn": 0,
+  "category": "",
+  "prevName": "SESQuarantinedDevices",
+  "widgetType": "text",
+  "customCalculation": {
+    "operation": "count",
+    "fieldName": "",
+    "expression": ""
+  }
+}
