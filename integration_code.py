@@ -526,7 +526,10 @@ def dflt_cmd_res(res, command_ctx_key, indicator=None):
 def categorize_ioc_type(value):
     """Try to deduce an IOC's type given only its string value."""
     if len(value) == 64: # assume sha256 based on length ..
-        return "file"
+        try:
+            int(value, 16); return "file"
+        except ValueError:
+            pass
     try:
         socket.inet_aton(value)
         return "ip" # IPv4
