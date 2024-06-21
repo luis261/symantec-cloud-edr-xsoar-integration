@@ -154,20 +154,6 @@ def autotranslate_to_dvc_ids(cmeth):
         return cmeth(client, demisto_args, *args, **kwargs)
     return cmeth_wrapper
 
-
-""" arg-specific transforming decorators """
-
-def strip_addr_protocol(cmeth):
-    @wraps(cmeth)
-    def cmeth_wrapper(client, demisto_args, *args, **kwargs):
-        try:
-            demisto_args["address"] = strip_protocol_prefix(demisto_args["address"])
-        except KeyError:
-            pass
-
-        return cmeth(client, demisto_args, *args, **kwargs)
-    return cmeth_wrapper
-
 """ decorators def end """
 
 ARG_NAMES_TO_DYN_RESOLVE = {
@@ -373,25 +359,10 @@ class Client():
             indicator=as_indicator(res["file"], res)
         )
 
-    @strip_addr_protocol
-    def get_url_intel(self, args):
-        res = self._req("/threat-intel/insight/network", dyn_subdirs=(args["address"],))
-        return dflt_cmd_res(
-            res, "hostTI",
-            indicator=as_indicator(res["network"], res)
-        )
-
     def get_file_sha256_related_intel(self, args):
         return dflt_cmd_res(
             self._req("/threat-intel/related/file", dyn_subdirs=(args["file_sha256"],)),
             "hashRelatedTI"
-        )
-
-    @strip_addr_protocol
-    def get_url_related_intel(self, args):
-        return dflt_cmd_res(
-            self._req("/threat-intel/related/network", dyn_subdirs=(args["address"],)),
-            "hostRelatedTI"
         )
 
     def _req(
