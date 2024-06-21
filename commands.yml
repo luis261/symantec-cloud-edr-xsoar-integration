@@ -78,14 +78,6 @@ script:
     arguments:
     - name: file_sha256
       required: true
-  - name: ses-get-url-related-intel
-    arguments:
-    - name: address
-      required: true
-  - name: ses-get-url-intel
-    arguments:
-    - name: address
-      required: true
   - name: ses-unquarantine-device
     arguments:
     - name: name
