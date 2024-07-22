@@ -10,10 +10,7 @@ def main():
     # useful for TI commands which have an enforced naming scheme
     # (https://xsoar.pan.dev/docs/integrations/code-conventions#ioc-reputation-commands)
     transform_from_alias = config_transform({
-            "file": "get-file-sha256-intel",
-            "url": "get-url-intel",
-            "domain": "get-url-intel",
-            "ip": "get-url-intel"
+            "file": "get-file-sha256-intel"
         },
         prefix="ses-",
         to_under=True
